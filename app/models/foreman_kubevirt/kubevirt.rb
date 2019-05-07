@@ -28,6 +28,10 @@ module ForemanKubevirt
       %i[build image new_volume]
     end
 
+    def user_data_supported?
+      true
+    end
+
     def provided_attributes
       { :uuid => :name, :mac => :mac }
     end
